@@ -47,7 +47,7 @@ CHECK_CAPTCHA_SOLVER_USAGE = True
 
 user_agent = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/95.0.4638.69 Safari/537.36"
+    "Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0"
 )
 desp = ""  # 日志信息
 
