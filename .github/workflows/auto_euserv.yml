@@ -2,7 +2,7 @@ name: Auto EUserv
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天 UTC 时间 00:00 运行
+    - cron: '0 2 * * *'  # 每天 UTC 时间 02:00 运行
   workflow_dispatch:
 
 jobs:
@@ -21,6 +21,10 @@ jobs:
     - name: Install dependencies
       run: |
         pip install requests beautifulsoup4
+
+    - name: Sleep for random seconds # 休息个随机秒后再执行
+      run: sleep $(shuf -i 1-600 -n 1)
+      shell: bash
 
     - name: Run script
       env:
