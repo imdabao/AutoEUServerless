@@ -23,7 +23,7 @@ jobs:
         pip install requests beautifulsoup4
 
     - name: Sleep for random seconds # 休息个随机秒后再执行
-      run: sleep $(shuf -i 1-600 -n 1)
+      run: sleep $(shuf -i 1-60 -n 1)
       shell: bash
 
     - name: Run script
